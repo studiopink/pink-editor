@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Ballet';
+    src: url('Ballet-Regular.woff2') format('woff2'),
+        url('Ballet-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grand Hotel';
+    src: url('GrandHotel-Regular.woff2') format('woff2'),
+        url('GrandHotel-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monoton';
+    src: url('Monoton-Regular.woff2') format('woff2'),
+        url('Monoton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanalei';
+    src: url('Hanalei-Regular.woff2') format('woff2'),
+        url('Hanalei-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.woff2') format('woff2'),
+        url('Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans.woff2') format('woff2'),
+        url('OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Reggae One';
+    src: url('ReggaeOne-Regular.woff2') format('woff2'),
+        url('ReggaeOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

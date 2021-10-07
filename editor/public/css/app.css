@@ -1,0 +1,146 @@
+.video_tracks_block {
+	width: -moz-fit-content;
+}
+
+.btn_pink.disabled {
+	pointer-events: none;
+    background: rgb(224 73 173 / .3);
+    color: #909090;
+}
+
+.btn_pink.disabled path {
+	fill: #909090;
+}
+
+.bottom_section_top_controls {
+	user-select: none;
+}
+
+.red_text {
+    color: #f00 !important;
+}
+
+.modal_window {
+	color: #9BAFB3;
+}
+
+.modal_window .content {
+	width: 100%;
+    height: 100%;
+}
+
+.modal_window .body {
+	width: 100%;
+    height: calc(100% - 35px - 10px);
+    padding: 0 5px;
+    overflow: auto;
+	overflow-x: hidden;
+}
+
+.modal_window .header {
+	width: 100%;
+    display: flex;
+    min-height: 35px;
+	background: #021F23;
+	margin-bottom: 5px;
+	line-height: 1.16;
+}
+
+.modal_window .header .left_header {
+	flex: 1;
+	display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 26px;
+    padding: 0 10px;
+	cursor: move;
+    user-select: none;
+}
+
+.modal_window .header button {
+	width: 26px;
+    padding: 0;
+    background: none;
+    border: none;
+    margin: 8px 0;
+	position: relative;
+}
+
+.modal_window .header button svg {
+	width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.modal_window .header button svg path {
+	fill: #bdbdbd;
+}
+
+.transparent_bg > .vm--overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.video_tracks_block_wrpr {
+    scrollbar-color: #6882864d #001B1F;
+    scrollbar-width: 10px;
+}
+
+.video_tracks_block_wrpr::-webkit-scrollbar {
+    height: 10px;
+}
+
+.app_content .center_section {
+    height: calc(100vh - 326px);
+}
+
+.subtitle_item p {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 10px;
+    color: rgb(0 27 31 / 78%);
+}
+
+.editor_content_box.screen_mode_desktop {
+    max-width: 100%;
+    height: 100%;
+}
+
+.editor_content_box.screen_mode_mobile {
+    height: 100%;
+}
+
+.undo_redo_btns a.disabled svg path {
+	stroke: #1a3b3f;
+}
+
+.undo_redo_btns {
+    user-select: none;
+}
+
+.volume_range_wrpr {
+    min-width: 100% !important;
+}
+
+.volume_range {
+    height: 12px;
+    background: transparent;
+}
+
+.campaign_name input {
+    font-size: 16px;
+    line-height: 22px;
+    color: #9BAFB3;
+    margin-left: 20px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+.campaign_name img {
+    margin-left: 10px;
+    width:16px;
+    height: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+{
+  "_from": "vue-range-component",
+  "_id": "vue-range-component@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-J/rE7KJa61XsLXREvSw0Ia+dSTaLoP5Ou7NfOy5pm/1FMgYn7E14iQj7baA8H4ZxoIuKuCfrhjWglPHtWUPGmg==",
+  "_location": "/vue-range-component",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vue-range-component",
+    "name": "vue-range-component",
+    "escapedName": "vue-range-component",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vue-range-component/-/vue-range-component-1.0.3.tgz",
+  "_shasum": "17a1faa0cf3ccb67bdcc767564fd9b9b1b71c237",
+  "_spec": "vue-range-component",
+  "_where": "/home/koctrx/GIT/Work/shotstack/editor",
+  "author": {
+    "name": "xwpongithub"
+  },
+  "bugs": {
+    "url": "https://github.com/xwpongithub/vue-range-slider/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A range slider component based on vue (Vue滑块组件).",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.1.5",
+    "babel-loader": "^8.0.4",
+    "cssnano": "^4.1.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "postcss": "^7.0.5",
+    "postcss-pxtorem": "^4.0.1",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-json": "^3.1.0",
+    "stylus": "^0.54.5",
+    "uglify-js": "^3.4.9",
+    "zlib": "^1.0.5"
+  },
+  "homepage": "https://github.com/xwpongithub/vue-range-slider",
+  "keywords": [
+    "javascript",
+    "rollup",
+    "vuejs",
+    "stylus"
+  ],
+  "license": "MIT",
+  "main": "dist/vue-range-slider.js",
+  "module": "dist/vue-range-slider.esm.js",
+  "name": "vue-range-component",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xwpongithub/vue-range-slider.git"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "version": "1.0.3"
+}
