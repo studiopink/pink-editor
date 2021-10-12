@@ -94,7 +94,7 @@ Add the above to your .env file in the /server directory.
 
 ## Run locally
 
-To run the editor locally run the following commands and go to [https://localhost:3000].
+To run the editor locally run the following commands and go to [https://localhost:3000](https://localhost:3000).
 
 ### Editor
 
