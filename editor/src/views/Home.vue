@@ -102,8 +102,6 @@
 					<IconBtn icon="redo" @click="history.redo()" :class="{ disabled: !history.isRedo() }"/>
 				</div>
 
-				<!-- <HeaderUsers /> -->
-				<!-- <Pbutton :style="{ background: '#940505', 'margin-right': '10px' }" @click="sendReport">Report</Pbutton> -->
 				<Pbutton icon="export"
 					:class="{ disabled: !currentVideos || !currentVideos.length }"
 					@click="$store.state.modals.export += 1"
@@ -419,7 +417,6 @@
 						</div>
 					</div>
 
-					<!-- <VideoChat /> -->
 				</Workspace>
 
 				<!-- <Rightbars>
@@ -570,8 +567,6 @@ import utils from '../libs/utils';
 window.utils = utils;
 import Layouts from "@/components/layouts/";
 import Base from "@/components/base/";
-// import VideoChat from "@/components/VideoChat";
-// import HeaderUsers from "@/components/HeaderUsers";
 import VueDragResize from '../plugins/vue-drag-resize/src';
 import editor from '../libs/editor';
 import Modals from '../components/modals';
@@ -1089,24 +1084,6 @@ export default {
 		}
 	},
 	methods: {
-		async sendReport() {
-			const data = _history.generateHistoryToSave();
-			if(data) {
-				const description = prompt('Briefly describe the problem you are facing');
-
-				this.$store.state.loader.text = 'Sending...';
-				this.$store.state.loader.isActive = true;
-
-				try {
-					const response = await api.sendReport({ description, data });
-					this.$swal(`Request sended!`, `Report ID: ${response._id}`);
-				} catch(err) {
-					this.$swal('Something went wrong, the request was not sent', '', 'error');
-				}
-
-				this.$store.state.loader.isActive = false;
-			}
-		},
 
 		videoTrackScroll(ev) {
 			const min = $('.video_tracks').height();

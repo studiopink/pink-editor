@@ -4,12 +4,6 @@ import axios from 'axios';
 const API_URL = config.API_URL;
 
 export default {
-    async sendReport(data) {
-        return await fetch(`${API_URL}/api/report`, {
-            method: 'post',
-            body: JSON.stringify(data)
-        }).then(res => res.json());
-    },
 
     async uploadFileSubtitles(file, processCallback = () => { }) {
         const b64 = await new Promise(resolve => {
