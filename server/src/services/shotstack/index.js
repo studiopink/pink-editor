@@ -5,7 +5,7 @@ const utils = require('./utils');
 const subStorage = require('../../io/subscribeStorage');
 
 const URL = process.env.SHOTSTACK_API;
-const API_KEY = process.env.SHOTSTACK_TOKEN;
+const API_KEY = process.env.SHOTSTACK_API_KEY;
 
 module.exports = new class {
     async getStatusBuild(renderId) {
