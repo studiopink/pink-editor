@@ -63,6 +63,13 @@ The editor requires you to set environment variables for `VUE_APP_SOCKET_API` of
 and the `VUE_APP_API` for the API endpoints exposed on the server. The `BASE_URL` is used for routing.
 
 ```bash
+cd server
+touch .env
+```
+
+Add the following to your new `.env` file:
+
+```bash
 VUE_APP_SOCKET_API=ws://localhost:3000
 VUE_APP_API=https://localhost:3000
 BASE_URL=https://localhost:3000
@@ -80,6 +87,13 @@ the videos. You can [register](https://dashboard.shotstack.io/register) on the S
 To enable a secure connection between the Editor and the Server you need to reference the SSL keypair you want
 to use to encrypt the connection. For development purposes you can use a self-signed certificate using an utility
 such as [mkcert](https://github.com/FiloSottile/mkcert). For production you can use [Let's Encrypt](https://letsencrypt.org/).
+
+```bash
+cd server
+touch .env
+```
+
+Add the following to your new `.env` file:
 
 ```bash
 PORT=3000
@@ -101,6 +115,7 @@ To run the editor locally run the following commands and go to [https://localhos
 The following command builds the editor, moves it to the server directory and watches for changes:
 
 ```bash
+cd editor
 npm run xxx
 ```
 
@@ -109,5 +124,6 @@ npm run xxx
 The following command starts the server and watches for changes:
 
 ```bash
+cd server
 npm run dev
 ```
