@@ -4,3 +4,4 @@
 .env.staging
 /views/
 /localStorage/*
+*.pem

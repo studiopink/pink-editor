@@ -102,8 +102,8 @@
 					<IconBtn icon="redo" @click="history.redo()" :class="{ disabled: !history.isRedo() }"/>
 				</div>
 
-				<HeaderUsers />
-				<Pbutton :style="{ background: '#940505', 'margin-right': '10px' }" @click="sendReport">Report</Pbutton>
+				<!-- <HeaderUsers /> -->
+				<!-- <Pbutton :style="{ background: '#940505', 'margin-right': '10px' }" @click="sendReport">Report</Pbutton> -->
 				<Pbutton icon="export"
 					:class="{ disabled: !currentVideos || !currentVideos.length }"
 					@click="$store.state.modals.export += 1"
@@ -253,7 +253,7 @@
 
 						<div class="subtitles_bottom">
 							<GrayLabel>Subtitle</GrayLabel>
-							<SubtitleItem mainText="Auto Subtitles" subText="Automatically add subtitles to video" />
+							<!-- <SubtitleItem mainText="Auto Subtitles" subText="Automatically add subtitles to video" /> -->
 							<SubtitleItem @click="addManualSubtitles()" mainText="Manual Subtitles" subText="Add your subtitles manually to video" />
 							<SubtitleItem mainText="Upload Subtitle file" :isFile="true" subText="Add subtitles from .srt, .ass, .vtt, .ssa files" />
 						</div>
@@ -419,24 +419,24 @@
 						</div>
 					</div>
 
-					<VideoChat />
+					<!-- <VideoChat /> -->
 				</Workspace>
 
-				<Rightbars>
+				<!-- <Rightbars>
 					<StepRight v-for="(tutorial, index) in tutorialSteps"
 						:title="tutorial.title" :key="index"
 						:img="tutorial.preview" @click="openTutorial(tutorial)"
 						:active="stepNumber == tutorial.step"/>
-				</Rightbars>
+				</Rightbars> -->
 			</template>
 
 			<template v-slot:bottom>
 				<Controlbar v-if="currentVideos && currentVideos.length" ref="control_bar">
 					<template v-slot:left>
-						<Tcontrol icon="reshoot" @click="resetAll()">Reshoot</Tcontrol>
+						<Tcontrol icon="reshoot" @click="resetAll()">Reset</Tcontrol>
 						<!-- <Tcontrol icon="preview" :active="previewMode" @click="previewModeToggle">Preview Mode</Tcontrol> -->
 						<Pbutton icon="next" :sm="true" @click="nextStep" v-if="stepNumber !== 5">Next Step</Pbutton>
-						<Pbutton :sm="true" v-if="stepNumber === 5">Share</Pbutton>
+						<!-- <Pbutton :sm="true" v-if="stepNumber === 5">Share</Pbutton> -->
 					</template>
 					<template v-slot:center>
 						<Ccontrol :format="videoFormat" @formatChange="videoFormatChange"/>
@@ -570,8 +570,8 @@ import utils from '../libs/utils';
 window.utils = utils;
 import Layouts from "@/components/layouts/";
 import Base from "@/components/base/";
-import VideoChat from "@/components/VideoChat";
-import HeaderUsers from "@/components/HeaderUsers";
+// import VideoChat from "@/components/VideoChat";
+// import HeaderUsers from "@/components/HeaderUsers";
 import VueDragResize from '../plugins/vue-drag-resize/src';
 import editor from '../libs/editor';
 import Modals from '../components/modals';
@@ -586,7 +586,7 @@ import keyboard from '../libs/keyboard';
 window._history = history;
 export default {
 	name: 'Home',
-	components: { TimelineHorizontal, ExampleTimeline, ...Layouts, ...Modals, ...Base, VideoChat, HeaderUsers, VueDragResize, AudioPlayer, ObjectPopup },
+	components: { TimelineHorizontal, ExampleTimeline, ...Layouts, ...Modals, ...Base, VueDragResize, AudioPlayer, ObjectPopup },
 	data() {
 		const defaultSearchBl = {
 			overview: false,
@@ -682,7 +682,7 @@ export default {
 			previewMode: true,
 			desktopMobileMode: 'mobile',
 			steps: [
-				'Overview & Brandkit', 'Add & Trim Intro / Outro', 'Captions / Subtitles', 'BRAND IT! / TEXT IT!', 'Check Audio & Video',
+				'Media Assets', 'Intro / Outro', 'Subtitles', 'Styling', 'Audio',
 			],
 			stepNumber: 1,
 			audioFiles: [],
@@ -2088,6 +2088,7 @@ export default {
 
 .undo_redo_btns a.disabled {
 	pointer-events: none;
+	margin-right: 12px;
 }
 
 .preview_loc {

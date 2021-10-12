@@ -67,7 +67,9 @@ async function createServer(server) {
         });
 
         console.log('Database connected.');
-    } catch(err) {}
+    } catch(err) {
+        console.log(err)
+    }
 
     require('./src/io')(server);
     server.listen(config.port, () => console.log(config.domain));
