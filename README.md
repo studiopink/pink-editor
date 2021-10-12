@@ -62,6 +62,8 @@ assets for rendering.
 The editor requires you to set environment variables for `VUE_APP_SOCKET_API` of the `socket.io` connection
 and the `VUE_APP_API` for the API endpoints exposed on the server. The `BASE_URL` is used for routing.
 
+Run the following commands to create a `.env` file in your editor directory:
+
 ```bash
 cd server
 touch .env
@@ -81,6 +83,13 @@ Add the above to your .env file in the /editor directory.
 
 The server requires you to set up environment variables for the `PORT` and `DOMAIN` for the server to run on.
 
+Run the following commands to create a `.env` file in your server directory:
+
+```bash
+cd server
+touch .env
+```
+
 The `SHOTSTACK_API` is the base url for the [Shotstack video editing API](https://shotstack.io) that renders
 the videos. You can [register](https://dashboard.shotstack.io/register) on the Shotstack website for a free `SHOTSTACK_API_KEY`.
 
@@ -88,12 +97,7 @@ To enable a secure connection between the Editor and the Server you need to refe
 to use to encrypt the connection. For development purposes you can use a self-signed certificate using an utility
 such as [mkcert](https://github.com/FiloSottile/mkcert). For production you can use [Let's Encrypt](https://letsencrypt.org/).
 
-```bash
-cd server
-touch .env
-```
-
-Add the following to your new `.env` file:
+Based on the above add the following to your new `.env` file:
 
 ```bash
 PORT=3000
