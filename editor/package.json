@@ -5,7 +5,7 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "xxx": "vue-cli-service build --watch --mode development"
+        "dev": "vue-cli-service build --watch --mode development"
     },
     "dependencies": {
         "axios": "^0.21.1",

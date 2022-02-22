@@ -51,7 +51,7 @@ try {
         res.redirect('https://' + req.headers.host + req.url);
     })
 
-    httpServer.listen(80);
+    httpServer.listen(8080);
 } catch (err) {
     const httpServer = require('http').createServer(app);
     createServer(httpServer);

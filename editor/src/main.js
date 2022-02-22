@@ -14,8 +14,8 @@ import VueSimpleContextMenu from 'vue-simple-context-menu';
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueDragscroll from 'vue-dragscroll';
-import '@/plugins/vue-range-component/dist/vue-range-slider.css';
-import VueRangeSlider from '@/plugins/vue-range-component';
+import 'vue-range-component/dist/vue-range-slider.css';
+import VueRangeSlider from 'vue-range-component';
 
 Vue.component('vue-simple-context-menu', VueSimpleContextMenu);
 Vue.component('vue-drag-resize', VueDragResize);
