@@ -16,6 +16,7 @@
     "get-video-duration": "^3.0.2",
     "image-thumbnail": "^1.0.13",
     "mime": "^2.5.0",
+    "mongoose": "^6.2.3",
     "socket.io": "^3.1.1"
   },
   "devDependencies": {
